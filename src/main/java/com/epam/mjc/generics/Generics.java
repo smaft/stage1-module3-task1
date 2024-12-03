@@ -5,10 +5,10 @@ import java.util.List;
 
 public class Generics {
 
-    public List<String> boxingMethod(String name) {
+    public List<List<String>> boxingMethod(String name) {
        List<String> firstList = new ArrayList<>();
         firstList.add(name);
-        List<String> secondList = new ArrayList<>();
+        List<List<String>> secondList = new ArrayList<>();
         secondList.add(firstList);
         return secondList;
     }
